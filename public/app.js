@@ -1,9 +1,10 @@
 import { Invoice } from "./Classes/Invoice.js";
-const invOne = new Invoice("Mario", "sleeping", 250);
-const invTwo = new Invoice("Luigi", "eating", 300);
-let invoices = [];
-invoices.push(invOne);
-invoices.push(invTwo);
-invoices.forEach((inv) => {
-    console.log(inv.client, inv.amount, inv.format());
-});
+import { Payment } from "./Classes/Payment.js";
+let docOne;
+let docTwo;
+docOne = new Invoice("Yoshi", "Snoring", 250);
+docTwo = new Payment("Mario", "Dancing", 200);
+let docs = [];
+docs.push(docOne);
+docs.push(docTwo);
+console.log(docs);
